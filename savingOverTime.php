@@ -1,5 +1,5 @@
 <?php
-class interests {
+class savingsOverTime {
 
     function __construct() {
 
