@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pensionssparande</title>
+</head>
+<body>
+<h2>Räkna ut hur dina besparingar kan se ut efter en tid</h2>
+
+<form action="savingOverTimeInstance.php" method="post">
+    <p>Vad har du för startbelopp?</p>
+    <input type="number" name="initialAmount" required min="0"><br />
+
+    <p>Hur mycket vill du spara undan i månaden?</p>
+    <input type="number" name="monthlySavingsAmount" required min="0"><br />
+
+    <p>I hur många år vill du spara?</p>
+    <input type="number" name="investmentPeriod" required min="0"><br />
+
+    <p>Antagande om avkastning? (%)</p>
+    <input type="number" name="assumedYield" required min="0"><br /><br />
+
+    <input type="submit" name="submitSavingsForm" value="Räkna ut" />
+</form>
+
+
+<h2>Räkna ut hur mycket du behöver spara för att uppnå önskad månadsutdelning</h2>
+
+<form action="preferredMonthlyPaymentInstance.php" method="post">
+    <p>Hur mycket vill du få ut i månaden?</p>
+    <input type="number" name="preferredPayment" required min="0"><br />
+
+    <p>Vid vilken åler tänker du pensionera dig?</p>
+    <input type="number" name="yearOfRetirement" required min="1"><br />
+
+    <p>Tills vilken ålder vill du få ut önskad månatlig utdelning?</p>
+    <input type="number" name="ageOfLastPayment" required min="1"><br />
+
+    <p>Genomsnittlig avkastning? (%)</p>
+    <input type="number" name="avarageReturn" required min="0"><br /><br />
+
+    <input type="submit" name="submitMonthlyPaymentForm" value="Räkna ut" />
+</form>
+
+</body>
+</html>
